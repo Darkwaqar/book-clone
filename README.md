@@ -68,3 +68,30 @@ stepzen start --dashboard=local
 
 16. add async-storage
     `npx expo install @react-native-async-storage/async-storage`
+
+17. lets add jest to the project
+    `npx expo install jest-expo jest`
+
+- Then, update package.json to include:
+
+```
+"scripts": {
+  ...
+  "test": "jest"
+},
+"jest": {
+  "preset": "jest-expo"
+}
+```
+
+- don't want to test every thing so we include package.json
+
+```
+"jest": {
+  "preset": "jest-expo",
+  "transformIgnorePatterns": [
+    "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+  ]
+}
+
+```
