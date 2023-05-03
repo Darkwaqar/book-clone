@@ -1,3 +1,7 @@
+# Clone of Google Books
+
+# React Native | expo | Stepzen | googleapi | openlibrary | GraphQL | Apollo Client | async-storage | jest
+
 ## step
 
 1. use `npx create-expo-app -t expo-template-blank-typescript` this will init the project in typescript
@@ -95,3 +99,12 @@ stepzen start --dashboard=local
 }
 
 ```
+
+- test by simply `yarn test`
+
+## preview
+
+| Search Books                 | My Saved Books               |
+| ---------------------------- | ---------------------------- |
+| ![alt text](./preview/1.png) | ![alt text](./preview/2.png) |
+| ![alt text](./preview/3.png) |
