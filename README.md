@@ -58,3 +58,13 @@ stepzen start --dashboard=local
 13. add expo-linking `npx expo install expo-linking`
 
 14. add the splash-screen `npx expo install expo-splash-screen`
+
+15. add apollo client
+
+- https://www.apollographql.com/docs/react/integrations/react-native/
+- `npx expo install @apollo/client graphql`
+- get the API_URL from terminal that was use in stepgen creation
+- `stepzen whoami --apikey` to get api key and put it in .env file
+
+16. add async-storage
+    `npx expo install @react-native-async-storage/async-storage`
